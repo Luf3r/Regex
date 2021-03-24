@@ -6,12 +6,8 @@ namespace DataForm
 {
     public partial class Form1 : Form
     {
-        private readonly Regex _name = new("(^[A-Z][a-zA-Z]*)$");
-        
-        private readonly Regex _dob = 
-            new(@"^([0-2][0-9]|(3)[0-1])[.](((0)[0-9])|((1)[0-2]))[.]\d{4}$");
-        //StackOverFlow: https://stackoverflow.com/questions/15491894/regex-to-validate-date-format-dd-mm-yyyy
-        
+        private readonly Regex _name = new("(^[A-Z][a-zA-Z]*)$");        
+        private readonly Regex _dob = new(@"^([0-2][0-9]|(3)[0-1])[.](((0)[0-9])|((1)[0-2]))[.]\d{4}$");
         private readonly Regex _email = new(@"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$");
         private readonly Regex _nrPhone = new(@"^[0-9]{9}$");
 
